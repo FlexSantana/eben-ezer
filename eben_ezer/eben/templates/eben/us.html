@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <meta charset="utf8" />
+    <title>EBEN-EZER Comunicaciones</title>
+    <link href="../../static/estilo.css" rel="stylesheet" type="text/css" />
+    <link href="../../static/estilo-servicios.css" rel="stylesheet" type="text/css" />
+    <link href="../../static/font.css" rel="stylesheet" type="text/css" />
+    <link href="../../static/estilos2.css" rel="stylesheet" type="text/css" />
+    <link href="../../static/mini.css" rel="stylesheet" type="text/css" media="screen and (max-width: 480px)" />
+
+    
+<script lang="Javascript">
+    var txt =" EBEN-EZER Comunicaciones ";
+    var espera = 200;
+    var refresca = null;
+    function titulo(){
+        document.title = txt;
+        txt = txt.substring(1, txt.length) + txt.charAt(0);
+        refresca = setTimeout("titulo()", espera);
+
+    }
+
+    titulo();
+</script>
+<!--ICONO DE PESTANA-->
+<link rel="shortcut icon" href="../../static/shop.ico" />
+</head>
+<body>
+    <header>
+        <h1>EBEN-EZER Comunicaciones</h1>
+        <h2>Todo lo puedo en Cristo que me fortalece (Filipenses 4:13)</h2>
+    </header>
+    <!---BOTON CARRO DE COMPRAS-->
+            <div class="carrito">
+                <ul>
+                    <li>
+                        <a href="#" class="icon-cart">
+                            <span id="cart_menu_num" data-action="cart-can" class="badge_rounded-circle"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+    <!--MENU VERTICAL-->
+    <div class="btn-menu">
+        <label for="btin-menu" class="icon-menu"></label>
+    </div>
+    
+
+    </div>
+    <!---BARRA DE BUSQUEDA-->
+    <div class="search">
+    <form action="">
+           
+        <input type="text" id="buscar">
+
+        <button>BUSCAR</button>
+    </form>
+    </div>
+    <!--- CAJA PRINCIPAL -->
+    <div id="box">
+        <h1>NOSOTROS</h1>
+        <h2><span style="color: rgb(255, 255, 255);"> Somos una empresa fundada el 30 de Marzo del 2015, con el
+                                         proposito de ayudar a las personas a obtener equipos
+                                        de calidad y a buen precio. Este proyecto lo lleve en conjunto 
+                                        de mi barberia y con la ayuda de nuestro Dios Todopoderoso, que gracias a el es que
+                                        hemos podido llevar a cabo la puesta y desarrollo de nuestro local para 
+                                        servirles a todos y cada uno de nuestros clientes.</span></h2>
+    </div>
+
+
+     <!---MENU DE REDES SOCIALES--> 
+     <div class="social-bar">
+        <a href="https://www.facebook.com" class="icon icon-facebook2" target="_blank"></a>
+        <a href="https://www.instagram.com" class="icon icon-instagram" target="_blank"></a>
+        <a href="https://www.whatsapp.com" class="icon icon-whatsapp" target="_blank"></a>
+        <a href="https://www.twitter.com" class="icon icon-twitter" target="_blank"></a>
+        <a href="https://www.youtube.com" class="icon icon-youtube" target="_blank"></a>
+    </div>
+
+    <footer>
+        <a style="text-decoration: none;" href="{% url 'us' %}">Sobre nosotros</a>
+        <a style="text-decoration: none;" href="https://www.google.com/maps/place/Eben-ezer+comunicaciones/@18.4627167,-69.9767287,21z/data=!4m5!3m4!1s0x8ea561274c688161:0x4154bf7d3fe9d4!8m2!3d18.4628013!4d-69.9767243" target="_blank">Como llegar</a>
+        <a style="text-decoration: none;" href="{% url 'servicios' %}">Servicios</a>
+        <a style="text-decoration: none;" href="#">Horario</a>
+    </footer>
+    <p>© 2021 Felix Santana All rights reserved</p>
+    <!--FUNCIONALIDAD DEL MENU-->
+    <input type="checkbox" id="btin-menu">
+        <div class="container-menu">
+            <div class="cont-menu">
+                <nav>
+                    <a href="{% url 'home' %}">Inicio</a>
+                    <a href="{% url 'us' %}">Nosotros</a>
+                    <a href="{% url 'servicios' %}">Servicios</a>
+                    <a href="{% url 'productos' %}">Productos</a>
+                    <a href="{% url 'contactos' %}">Contactos</a>
+                </nav>
+                <label for="btin-menu" class="icon-x"></label>
+            </div>
+        </div>
+    </input>
+</body>
+</html>
