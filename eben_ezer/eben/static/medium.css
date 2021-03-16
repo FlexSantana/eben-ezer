@@ -1,5 +1,5 @@
 body{
-  background-color: #000;
+  background: #000;
 }
 
 header h1{
@@ -26,7 +26,7 @@ div#box h2{
 
 div#box2{
    
-    margin: auto;
+    margin: 25%;
     margin-top: 15px;
     margin-bottom: 24px;
     width: 300px;
@@ -37,7 +37,7 @@ div#box2{
 
 
 div#box3{
-   
+    margin: 27.5%;
     margin-top:0%;
     width: 300px;
     height: 400px;
@@ -47,7 +47,7 @@ div#box3{
 }
 
 div#box4{
-    margin: auto;
+    margin: 25%;
     margin-top:862px;
     width: 300px;
     height: 400px;
@@ -86,7 +86,7 @@ div#audifonos:hover div#info, div#audifonos2:hover div#info, div#proteccion:hove
 }
 
 #ver button{
-    margin-left: 300px;
+    margin-left: 450px;
     margin-top: 0%;
     margin-bottom: 0%;
     background-color: aliceblue;
@@ -96,7 +96,7 @@ div#audifonos:hover div#info, div#audifonos2:hover div#info, div#proteccion:hove
 
 /*SERVICIOS*/
 div#activacion{
-    margin: 15%;
+    margin: 25%;
     margin-top: 25px;
     width: 300px;
     height: 400px;
@@ -107,7 +107,7 @@ div#activacion{
 
 div#mantenimiento{
    
-    margin: 15%;
+    margin: 27.5%;
     margin-top: 24px;
     width: 300px;
     height: 400px;
@@ -116,7 +116,7 @@ div#mantenimiento{
 }
 
 div#reparacion{
-    margin: 15%;
+    margin: 25%;
     margin-top:895px;
     width: 300px;
     height: 400px;
@@ -130,7 +130,6 @@ div#reparacion{
     width: 450px;
     height: 30px;
     margin: auto;
-
 }
 
 input{
